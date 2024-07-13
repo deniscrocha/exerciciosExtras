@@ -4,6 +4,7 @@ import TitleUpdate from "./TitleUpdate.jsx";
 import WindowSize from "./WindowSize.jsx";
 import PersistentCounter from "./PersistentCounter.jsx";
 import RealTimeClock from "./RealTimeClock.jsx";
+import ToggleText from "./ToggleText.jsx";
 function Main() {
   const [actualExerc, setActualExerc] = useState(1);
   const handleClick = (number) => {
@@ -29,7 +30,7 @@ function Main() {
         )
       case 5:
         return (
-          <p>{actualExerc}</p>
+          <ToggleText />
         )
       case 6:
         return (

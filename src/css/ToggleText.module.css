@@ -1,0 +1,38 @@
+.ToggleDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2vh;
+  height: 40vh;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 2rem;
+  background: #414559;
+
+  & h2 {
+    font-weight: bold;
+    color: #ca9ee6;
+    font-size: 1.8rem;
+  }
+
+  & p {
+    font-size: 1rem;
+    padding: 1vh;
+    width: 40vw;
+  }
+
+  & button {
+    height: 8vh;
+    width: 13vw;
+    color: #232634;
+    background: #e78284;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  & button:hover {
+    cursor: pointer;
+    background: #f4b8e4;
+  }
+}
