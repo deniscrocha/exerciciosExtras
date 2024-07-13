@@ -1,8 +1,10 @@
-# React + Vite
+# Exercícios Extras - Ciclo de vida em componentes funcionais
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Exercícios extras do curso de programação full stack da <a href="https://www.maisprati.com.br/">Mais Pra Ti</a>.
 
-Currently, two official plugins are available:
+## Instalação
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para executar o projeto, basta clonar o repositório dentro da sua máquina. 
+Após isso, deve-se instalar as dependências utilizando o comando npm install dentro da pasta do repositório clonado.
+Para finalizar, basta utilizar o comando npm run dev. Isso abrirá um servidor com os exercícios na porta 5173,
+os quais você poderá acessar pelo seu navegador.
