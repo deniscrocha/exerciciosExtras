@@ -1,6 +1,7 @@
 import style from "../css/Main.module.css";
 import { useState, useEffect } from "react";
 import TitleUpdate from "./TitleUpdate.jsx";
+import WindowSize from "./WindowSize.jsx";
 function Main() {
   const [actualExerc, setActualExerc] = useState(1);
   const handleClick = (number) => {
@@ -13,7 +14,25 @@ function Main() {
           <TitleUpdate />
         )
       case 2:
-        break;
+        return (
+          <WindowSize />
+        )
+      case 3:
+        return (
+          <p>{actualExerc}</p>
+        )
+      case 4:
+        return (
+          <p>{actualExerc}</p>
+        )
+      case 5:
+        return (
+          <p>{actualExerc}</p>
+        )
+      case 6:
+        return (
+          <p>{actualExerc}</p>
+        )
     }
   })
   useEffect(()=>{
@@ -24,7 +43,7 @@ function Main() {
   return (
     <main className={style.MainClass}>
       <section className={style.selectSection}>
-        <h3> Escolha o Exercício</h3>
+        <h2> Escolha o Exercício</h2>
         <div>
           <button
             name="Button1"
