@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import TitleUpdate from "./TitleUpdate.jsx";
 import WindowSize from "./WindowSize.jsx";
 import PersistentCounter from "./PersistentCounter.jsx";
+import RealTimeClock from "./RealTimeClock.jsx";
 function Main() {
   const [actualExerc, setActualExerc] = useState(1);
   const handleClick = (number) => {
@@ -24,7 +25,7 @@ function Main() {
         )
       case 4:
         return (
-          <p>{actualExerc}</p>
+          <RealTimeClock />
         )
       case 5:
         return (
