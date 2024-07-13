@@ -1,26 +1,26 @@
 import style from "../css/Main.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import TitleUpdate from "./TitleUpdate.jsx";
 function Main() {
   const [actualExerc, setActualExerc] = useState(1);
   const handleClick = (number) => {
     setActualExerc(number);
   };
-  const renderExer = (exerc) =>{
-    switch(exerc){
+  const switchExerc = (()=>{
+    switch (actualExerc) {
       case 1:
-        return(<h1>Exercicio 01</h1>)
+        return (
+          <TitleUpdate />
+        )
       case 2:
-        return(<h1>Exercicio 02</h1>)
-      case 3:
-        return(<h1>Exercicio 03</h1>)
-      case 4:
-        return(<h1>Exercicio 04</h1>)
-      case 5:
-        return(<h1>Exercicio 05</h1>)
-      case 6:
-        return(<h1>Exercicio 06</h1>)
+        break;
     }
-  }
+  })
+  useEffect(()=>{
+    if(actualExerc !== 1){
+      document.title = "Atividades Extras";
+    }
+  }, [actualExerc])
   return (
     <main className={style.MainClass}>
       <section className={style.selectSection}>
@@ -71,7 +71,7 @@ function Main() {
         </div>
       </section>
       <section className={style.exercSection}>
-        {renderExer(actualExerc)}
+        {switchExerc()}
       </section>
     </main>
   );
