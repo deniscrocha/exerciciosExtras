@@ -2,6 +2,7 @@ import style from "../css/Main.module.css";
 import { useState, useEffect } from "react";
 import TitleUpdate from "./TitleUpdate.jsx";
 import WindowSize from "./WindowSize.jsx";
+import PersistentCounter from "./PersistentCounter.jsx";
 function Main() {
   const [actualExerc, setActualExerc] = useState(1);
   const handleClick = (number) => {
@@ -19,7 +20,7 @@ function Main() {
         )
       case 3:
         return (
-          <p>{actualExerc}</p>
+          <PersistentCounter />
         )
       case 4:
         return (

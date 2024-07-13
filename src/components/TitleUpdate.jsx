@@ -17,7 +17,7 @@ function TitleUpdate() {
     }
   };
   return (
-    <div class={style.TitleDiv}>
+    <div className={style.TitleDiv}>
       <h2>Atualização de Título</h2>
       <p>Counter: {title}</p>
       <div>
